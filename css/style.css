@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.img-main{
+    width: 300px;
+    height: 300px;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background: #333;
+    color: #ddd;
+}
+
+.descricao{
+    width: 300px;
+}
+
+h2{
+    margin-bottom: 5px;
+}
+
+.duracao{
+    width: 300px;
+    margin-top: 25px;
+}
+
+.barra{
+    width: 300px;
+    height: 6px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+progress{
+    height: 6px;
+    width: 0;
+    background-color: #333;
+
+}
+
+.ponto{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #eee;
+    margin-left: -10px;
+}
+
+.tempo{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    margin-top: 1rem;
+
+}
+
+.player{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.icon-seta{
+    width: 20px;
+}
+
+.icon-play, .icon-pause{
+    width: 50px;
+}
+
+.icon-pause{
+    display: none;
+}
