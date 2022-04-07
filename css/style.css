@@ -5,7 +5,26 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body{
+    background: linear-gradient(45deg, #000000, #020203, #11102c,#887ead, #363141, #11102c, 
+    #f3ea97);
+    animation: colors 15s ease infinite;
+    background-size: 300% 300%;
+}
 
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 .img-main{
     width: 300px;
@@ -17,9 +36,8 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh; 
     color: #ddd;
-    background: rgb(39, 29, 75);
+    height: 100vh; 
     
 }
 
@@ -81,6 +99,7 @@ progress{
 
 .icon-seta{
     width: 20px;
+    cursor: pointer;
 }
 
 .icon-play, .icon-pause{
@@ -88,8 +107,12 @@ progress{
     position: absolute;
     top: -10px;
     left: 125px;
+    cursor: pointer;
 }
 
 .icon-pause{
     display: none;
+    cursor: pointer;
 }
+
+
